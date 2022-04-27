@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nepal</title>
+    <style>
+      body {
+        background-color: #f9f9f9;
+      }
+      h1,
+      h2,
+      p {
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      h1 {
+        color: #062743;
+        background-color: transparent;
+        font-size: 40px;
+        padding: 15px 30px;
+        border: 6px solid #062743;
+        border-radius: 25px;
+        margin: 20px;
+      }
+      h2 {
+        color: #113a5d;
+        font-size: 20px;
+        padding: 20px 50px;
+        background-color: transparent;
+        border: 4px solid #113a5d;
+        border-radius: 20px;
+        margin: 10px 20px 50px 20px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 500px;
+        border-radius: 40px;
+      }
+      button {
+        background-color: transparent;
+        color: #113a5d;
+        font-weight: bolder;
+        font-size: 18px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: block;
+        margin: 40px auto;
+        padding: 10px 20px;
+        border: 2px solid #113a5d;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: all 100ms ease-in-out;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      }
+      button:hover {
+        background-color: #f9f9f9;
+        color: #113a5d;
+      }
+      .info {
+        color: #113a5d;
+        background-color: transparent;
+        margin: 10px 50px 20px 50px;
+      }
+      a {
+        color: #113a5d;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 14px;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        color: #113a5d;
+        font-size: 14px;
+      }
+      .container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 10px 0 60px 0;
+        background-color: #c4ffdd;
+        border-radius: 30px;
+      }
+      hr {
+        background-color: #113a5d;
+        margin: 30px 50px;
+        border: 1px solid #113a5d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>NEPAL</h1>
+      <h2>I traveled to Nepal and loved every minute of it</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/018/635/original/IMG_20181007_074629.jpg?1633896100"
+        alt="Everest"
+      />
+      <hr />
+      <p class="info">
+        In september 2018 I started my solotravel. The trip would take 8 months
+        in total and during the first two I traveled through Nepal. Very early
+        into my trip I had met two other travelers and together with a guide we
+        went trekking in the Mount Everest region. It was 16days trekking in the
+        mountains, it was the best experience of my life. With a lot of ups and
+        downs, literally, came the most amezing views.
+      </p>
+      <p class="wikipedia">
+        <a href="https://simple.wikipedia.org/wiki/Nepal" target="_blank"
+          >Learn more on Wikipedia</a
+        >
+      </p>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/018/636/original/IMG_20181009_105024.jpg?1633897117"
+        alt="Ama Dablam"
+      />
+      <button>Like to know more?</button>
+      <p class="footer">This page is coded by Inge van Schoot</p>
+    </div>
+    <script>
+      function moreInfo() {
+        let name = prompt("Hi there, what is your name?");
+        let email = prompt("And how about your email adress?");
+        alert("Thanks " + name + "! We will get in touch with you!");
+      }
+      let moreInfoButton = document.querySelector("button");
+      moreInfoButton.addEventListener("click", moreInfo);
+    </script>
+  </body>
+</html>
